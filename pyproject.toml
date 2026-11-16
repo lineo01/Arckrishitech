@@ -1,5 +1,1080 @@
-[tool.vercel]
-entrypoint = "backend.app.main:app"
-
-[tool.vercel.fastapi.static]
-cdn = true
+e
+Source
+Message
+Nov 16 17:02:59.88
+/robots.txt
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:59.60
+/robots.txt
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:59.32
+/robots.txt
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:59.03
+/robots.txt
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:45.78
+/api/health
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:45.27
+/api/health
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:44.56
+/api/health
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:43.86
+/api/health
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:18.78
+/favicon.ico
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:18.01
+/api/health
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:10.13
+/favicon.ico
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:09.40
+/api/
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:05.88
+/favicon.ico
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:02:05.02
+/api/health
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:01:31.96
+/api/fields
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:00:19.85
+/api/analyze
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:00:17.47
+/api/analyze
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 17:00:13.65
+/api/fields
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 16:59:55.29
+/api/fields
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 16:59:39.73
+/favicon.png
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/task/_vendor/vercel_runtime/vc_init.py", line 564, in <module>
+ 
+__vc_module = import_module(_entrypoint_modname, _entrypoint_abs)
+ 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+File "/var/task/_vendor/vercel_runtime/resolver.py", line 24, in import_module
+ 
+spec.loader.exec_module(mod)
+ 
+File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+ 
+File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+ 
+File "/var/task/backend/app/main.py", line 6, in <module>
+ 
+from fastapi import FastAPI, HTTPException
+ 
+ModuleNotFoundError: No module named 'fastapi'
+ 
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 16 16:59:39.50
+/favicon.ico
+could not import "backend/app/main.py":
+ 
+Traceback (most recent call last):
+ 
+File "/var/ta
