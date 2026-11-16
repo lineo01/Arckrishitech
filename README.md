@@ -1,535 +1,177 @@
-# Arkrishitech 🌱
-### Climate-aware agricultural decision support for Nepal
+# 🌱 Arkrishitech
+
+### Climate-aware agriculture and indigenous knowledge for Nepal.
+
+Arkrishitech is an agricultural decision-support platform designed to help farmers make informed farming decisions through climate data, crop simulation, agricultural research, and field-level monitoring.
 
 <p align="center">
-  <img src="docs/images/arkrishitech-banner.png" alt="Arkrishitech banner" width="100%">
+  <a href="https://arckrishitech.vercel.app/">
+    <img src="docs/screenshots/dashboard.png" alt="Arkrishitech application dashboard" width="100%">
+  </a>
 </p>
 
 <p align="center">
-  <strong>Making farming decisions more informed through climate data, agricultural science, and local knowledge.</strong>
+  <a href="https://arckrishitech.vercel.app/"><strong>🌐 OPEN LIVE APPLICATION</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/lineo01/Arkrishitech"><strong>VIEW SOURCE CODE</strong></a>
 </p>
 
 <p align="center">
-  <a href="https://arckrishitech.vercel.app/">Live Application</a> ·
-  <a href="https://github.com/lineo01/Arckrishitech">GitHub Repository</a> ·
-  <a href="#how-it-works">How It Works</a> ·
-  <a href="#research--data">Research & Data</a>
+  <em>Click the dashboard image above to open the live application.</em>
 </p>
 
 ---
 
-## 1. About the Project
+## About the Project
 
-**Arkrishitech** is an agricultural decision-support platform developed with a focus on farming conditions in Nepal.
+Agriculture in Nepal is strongly influenced by local climate, soil conditions, seasonal rainfall, and traditional farming practices. However, farmers often lack accessible tools that bring these factors together when deciding what and when to grow.
 
-It helps farmers explore which crops may be suitable for their fields, when they should consider planting, how weather and water availability could affect crop growth, and how different farming decisions may influence estimated yield and profitability.
+Arkrishitech aims to bridge this gap by combining scientific agricultural methods with indigenous knowledge and connected field monitoring.
 
-The platform brings together historical climate data, weather forecasts, crop-water simulation, field information, sensor observations, agricultural research, and market references.
+## Features
 
-Rather than relying on a simple crop-season lookup, Arkrishitech evaluates different crops and planting dates against historical weather conditions at a selected location.
-
-Its purpose is to make agricultural planning more localized, understandable, and evidence-informed.
-
-## 2. The Problem
-
-Farming decisions are becoming increasingly difficult as weather patterns change and agricultural resources remain limited.
-
-Farmers may face:
-
-- **Climate uncertainty:** Rainfall and temperature conditions vary between locations and seasons.
-- **Uncertain crop selection:** A crop suitable for one region may not perform equally well in another.
-- **Water-management challenges:** Poor irrigation planning can expose crops to water stress.
-- **Disconnected information:** Weather, market prices, agricultural research, and field observations are often scattered across different sources.
-- **Limited access to research:** Valuable scientific and traditional farming knowledge is not always easy to find or apply locally.
-
-Arkrishitech addresses these challenges by bringing relevant information and analytical tools into one farming platform.
-
-## 3. What Arkrishitech Provides
-
-| Component | What it does |
+| Feature | Description |
 |---|---|
-| Field Mapping | Allows farmers to select and draw field boundaries and estimate field area. |
-| Climate Dashboard | Presents historical climate information and upcoming weather conditions. |
-| Crop Recommendations | Compares crops and planting dates using historical weather simulations. |
-| Crop Calendar | Organizes cultivation activities into a practical schedule. |
-| Compare & Simulate | Explores how changes in farming inputs and practices affect estimated outcomes. |
-| Sensors & Observations | Records soil moisture, soil temperature, and pH observations. |
-| Weather Alerts | Highlights potentially important weather and field conditions. |
-| Local Research Assistant | Retrieves documented agricultural practices and research relevant to Nepal. |
-| Market References | Provides a snapshot of selected wholesale market prices. |
+| **Crop Recommendations** | Evaluates crop suitability using historical climate conditions, planting periods, and estimated economic performance. |
+| **Crop Simulation** | Simulates crop-water requirements and potential performance across different planting dates. |
+| **Crop Comparison** | Helps compare candidate crops and planting options using model-based estimates. |
+| **Climate Insights** | Uses historical climate information and weather forecasts to provide environmental context. |
+| **Sensor Monitoring** | Designed to integrate field measurements such as soil moisture, temperature, and pH. |
+| **Agricultural Knowledge Base** | Makes documented agricultural research and traditional practices accessible. |
+| **Indigenous Knowledge AI** | Planned Nepal-focused AI system for locally relevant agricultural guidance. |
 
-## 4. How It Works
+## How It Works
 
-Arkrishitech follows a field-based analytical workflow.
+Arkrishitech brings together three main parts:
 
-<details>
-<summary><strong>View the system workflow</strong></summary>
+**1. Agricultural Intelligence Platform**
 
-```mermaid
-flowchart TD
-    A["Select or draw a field"] --> B["Field location and area"]
-    B --> C["Farm profile and observations"]
+The web application and backend process climate information, run crop simulations, and present recommendations through an accessible dashboard.
 
-    C --> D["Historical weather data"]
-    C --> E["Weather forecast"]
-    C --> F["Sensor readings"]
+**2. Connected Field Hardware**
 
-    D --> G["FAO-based crop-water calculations"]
-    G --> H["Historical crop-season simulations"]
-    H --> I["Estimated yield and water demand"]
-    I --> J["Economic and risk comparison"]
+Distributed ESP-based sensor nodes are intended to collect measurements from different locations in a farm. An Arduino UNO Q acts as the central hub, coordinating the sensor network and processing field information.
 
-    E --> K["Weather alerts"]
-    F --> K
+**3. Indigenous Knowledge Intelligence**
 
-    J --> L["Crop recommendations"]
-    L --> M["Cultivation calendar"]
-    L --> N["What-if simulations"]
+The intended system includes a locally deployed agricultural AI on the Arduino UNO Q. It will be developed using Nepal-focused agricultural research and documented indigenous farming knowledge, with the goal of making relevant guidance available closer to the field.
 
-    O["Nepal agricultural research"] --> P["Local knowledge retrieval"]
+## Crop Recommendation Engine
 
-    K --> Q["Farming decision dashboard"]
-    M --> Q
-    N --> Q
-    P --> Q
-```
+The crop simulation engine uses historical climate data and simplified agricultural modelling to estimate crop performance.
 
-</details>
+- **NASA POWER:** Historical daily climate data, covering approximately 30 years where available.
+- **Open-Meteo:** Weather forecast information.
+- **FAO-56 Penman–Monteith:** Reference evapotranspiration estimation.
+- **Crop coefficients (Kc):** Crop water requirement estimation.
+- **FAO-33 yield response:** Estimates the effect of water stress on potential yield.
 
-### The process
+The engine evaluates candidate planting dates against historical weather conditions and ranks options using risk-adjusted economic estimates.
 
-**1. Select a field**
+These results are simulations, not measured historical farm yields or guaranteed harvest predictions.
 
-The farmer selects a location and draws the field boundary. The application calculates its approximate geographical area and centre coordinates.
+## The Intended Hardware System
 
-**2. Provide farm information**
-
-The farmer can specify soil type, seed category, irrigation availability, labour, equipment, and other relevant inputs.
-
-**3. Collect climate information**
-
-The backend retrieves historical weather observations from NASA POWER and forecast information from Open-Meteo.
-
-**4. Simulate crop performance**
-
-The crop engine calculates water demand, soil-water availability, stress, and estimated yield for different crops and planting dates.
-
-**5. Compare economic outcomes**
-
-The system estimates production costs, revenue, net returns, and downside risk using its crop and economic assumptions.
-
-**6. Present recommendations**
-
-The application displays ranked crop options, estimated outcomes, cultivation schedules, alerts, and management scenarios.
-
----
-
-## 5. Crop Recommendation Engine
-
-The crop recommendation engine is the core analytical component of Arkrishitech.
-
-It is implemented in:
-
-`backend/app/engine.py`
-
-The engine uses historical weather data and simplified FAO-based agricultural calculations to simulate crop performance.
-
-### Historical season simulation
-
-The system evaluates candidate sowing dates and replays crop growth across available historical weather records.
-
-For each candidate:
-
-1. It selects a possible sowing date within the crop's configured planting months.
-2. It retrieves the corresponding historical daily weather records.
-3. It calculates crop water requirements throughout the growth cycle.
-4. It simulates soil-water availability and water stress.
-5. It estimates yield response and economic outcomes.
-6. It compares results across historical years.
-
-The current implementation examines up to 26 candidate dates, spaced 14 days apart, and requires at least eight complete historical runs before ranking a candidate.
-
-**Eight historical runs do not mean eight successful seasons.** Poor-performing seasons are included in the evaluation.
-
-### Scientific calculations
-
-The model uses two important FAO-based methods:
-
-- **FAO-56 Penman–Monteith:** Estimates reference evapotranspiration (ET₀), representing atmospheric water demand.
-- **FAO-33 yield-response relationship:** Estimates how water deficits can reduce yield relative to an assumed unstressed yield.
-
-Crop evapotranspiration is estimated using:
-
-\[
-ET_c = K_c \times ET_0
-\]
-
-The engine also simulates a simplified soil-water balance using rainfall, irrigation, soil characteristics, and crop rooting depth.
-
-### How crops are ranked
-
-The engine considers more than potential yield.
-
-It compares:
-
-- Estimated yield distribution.
-- Water requirements and water stress.
-- Temperature-related risks.
-- Production costs.
-- Expected revenue.
-- Downside risk.
-- Estimated net returns.
-
-The result is a risk-adjusted ranking of crop and planting-date options.
-
-### Important distinction
-
-The crop engine is a deterministic simulation, not a trained machine-learning crop-yield predictor.
-
-Its estimates are based on historical weather, configured crop parameters, and simplified scientific relationships. They are not measured historical farm harvests or guaranteed future yields.
-
-### Currently modelled crop options
-
-The current crop configuration covers eight crop entries, including:
-
-- Finger millet (Kodo)
-- Buckwheat (Fapar)
-- Maize, beans, and pumpkin mixed cropping
-- Lentil (Masuro)
-- Mustard (Tori)
-- Hill wheat and barley
-- Potato (Aalu)
-- Turmeric and ginger
-
-The planting windows and model parameters are configurable and require continued regional validation.
-
----
-
-## 6. Research & Data
-
-Arkrishitech combines three broad types of information:
-
-1. Climate and weather datasets.
-2. Scientific agricultural methods.
-3. Nepal-focused agricultural research and field observations.
-
-### Climate and weather sources
-
-| Source | Information used | Application |
-|---|---|---|
-| [NASA POWER](https://power.larc.nasa.gov/) | Historical temperature, rainfall, humidity, wind, and solar radiation | Historical crop-season simulation |
-| [Open-Meteo](https://open-meteo.com/) | Short-term weather forecasts | Weather dashboard and near-term alerts |
-| [Kalimati market reference](https://ramropatro.com/vegetable) | Selected wholesale vegetable prices | Economic assumptions and market reference |
-
-NASA POWER provides approximately 30 years of historical daily climate data where available. Open-Meteo provides forecasts of up to 16 days.
-
-Historical data and forecast data serve different purposes: historical records drive the crop replay, while forecasts support near-term weather awareness.
-
-### Scientific foundation
-
-The crop engine is informed by:
-
-**FAO-56 — Crop Evapotranspiration**
-
-Allen et al. (1998). FAO Irrigation and Drainage Paper 56.
-
-https://www.fao.org/4/x0490e/x0490e00.htm
-
-Used for reference evapotranspiration and crop-water requirement calculations.
-
-**FAO-33 — Yield Response to Water**
-
-Doorenbos and Kassam (1979). FAO Irrigation and Drainage Paper 33.
-
-https://www.fao.org/4/i2800e/i2800e.pdf
-
-Used as the basis for estimating yield response to water deficits.
-
-### Nepal-focused agricultural research
-
-The local knowledge component draws on research concerning traditional farming practices and agricultural adaptation.
-
-| Research | Location / subject |
-|---|---|
-| Indigenous agricultural knowledge for climate adaptation (2022) | Khumbu, Nepal |
-| Adoption of indigenous agricultural knowledge (2021) | Bhirkot, Syangja |
-| Plant-based traditional pest and disease management (2023) | Pokhara-32, Kaski |
-| Traditional crop genetic diversity and farmer conservation (2017) | Kailash Sacred Landscape |
-| Seed systems of traditional crops in mountain regions (2020) | Humla, Jumla, Lamjung, and Dolakha |
-
-Research references:
-
-- [Khumbu — Frontiers in Climate](https://doi.org/10.3389/fclim.2022.1067630)
-- [Bhirkot — Cogent Social Sciences](https://doi.org/10.1080/23311932.2021.1914384)
-- [Pokhara — Himalayan Biodiversity](https://doi.org/10.3126/hebids.V9i1.59586)
-- [Kailash Sacred Landscape — Journal of Agriculture and Environment](https://www.nepjol.info/index.php/AEJ/article/view/19886/16374)
-- [Traditional crop seed systems — Research PDF](https://giwmscdnone.gov.np/media/app/public/75/posts/1685027773_12.pdf)
-
-### How research is used
-
-These studies are not treated as direct crop-yield datasets.
-
-Instead, their documented practices and findings help build a structured local agricultural knowledge library.
-
-The system retrieves relevant information based on the user's question and preserves the source and geographical context of the research.
-
-For example, a traditional moisture-conservation practice documented in Khumbu should not automatically be treated as a universally suitable recommendation for every region of Nepal.
-
-More information:
-
-[`docs/research/NEPAL-LOCAL-KNOWLEDGE-AND-MARKET.md`](docs/research/NEPAL-LOCAL-KNOWLEDGE-AND-MARKET.md)
-
----
-
-## 7. Application Architecture
-
-Arkrishitech uses a lightweight frontend, a Python backend, external data sources, and a deterministic crop simulation engine.
-
-```mermaid
-flowchart LR
-    A["Frontend"] <-->|"HTTP API"| B["FastAPI Backend"]
-
-    B --> C["Crop Engine"]
-    B --> D["Weather Data Module"]
-    B --> E["Knowledge Retrieval"]
-    B --> F["Database"]
-
-    D --> G["NASA POWER"]
-    D --> H["Open-Meteo"]
-
-    E --> I["Local Research Library"]
-    C --> J["FAO-based calculations"]
-    B --> K["Sensor Interface"]
-```
-
-### Main technology stack
-
-| Layer | Technology |
-|---|---|
-| Frontend | HTML, CSS, JavaScript |
-| Mapping | Leaflet and Leaflet Draw |
-| Backend | Python and FastAPI |
-| Data validation | Pydantic |
-| Crop simulation | Custom Python engine |
-| Scientific methods | FAO-56 and FAO-33 concepts |
-| Database | SQLite |
-| Weather data | NASA POWER and Open-Meteo |
-| Knowledge retrieval | Custom Python retrieval system |
-| Market reference | JSON snapshot |
-| Hosting | Vercel |
-| Automation | GitHub Actions |
-
-### Repository structure
+The final system is designed around a distributed sensor network and a central edge-computing hub.
 
 ```text
-Arckrishitech/
-│
-├── backend/
-│   ├── app/
-│   │   ├── main.py          # API and application routes
-│   │   ├── engine.py        # Crop simulation and recommendations
-│   │   ├── data.py          # Climate data retrieval and caching
-│   │   ├── db.py            # Database operations
-│   │   ├── kb.py            # Local knowledge retrieval
-│   │   └── knowledge.json   # Agricultural knowledge records
-│   └── tests/
-│
-├── frontend/                # Frontend application
-├── public/                  # Static assets
-├── device/
-│   └── sketch/              # Arduino firmware
-├── docs/
-│   └── research/            # Research and market documentation
-├── scripts/                 # Data update scripts
-├── deploy/                  # Deployment resources
-│
-├── pyproject.toml
-├── requirements.txt
-├── DEPLOYMENT.md
-├── MARKET-DATA.md
-├── README.md
-├── run.bat
-└── run.sh
+       FARM SENSOR NETWORK
+       
+    ESP Node 1   ESP Node 2   ESP Node 3
+         \          |          /
+          \         |         /
+           ARDUINO UNO Q
+             CENTRAL HUB
+                  |
+       +----------+----------+
+       |                     |
+   STM32U585              QRB2210
+ Sensor & Hardware      Linux Processing
+    Control                  |
+                             |
+                 Indigenous Knowledge AI
+                    (Planned Local AI)
+                             |
+                    Backend / Platform
+                             |
+                     Arkrishitech Web App
 ```
 
----
+The UNO Q is intended to coordinate field hardware while its Linux processor provides the environment for local AI applications. The wider platform provides climate analysis, crop simulation, and the web interface.
 
-## 8. Field Sensors and Hardware
+## Research and Knowledge
 
-Arkrishitech includes an interface for recording field observations and integrating physical sensor readings.
+The project draws on Nepal-focused agricultural research and documented traditional practices, including:
 
-The current observation types include:
+- [Indigenous agricultural knowledge for climate adaptation — Khumbu, Nepal (2022)](https://doi.org/10.3389/fclim.2022.1067630)
+- [Adoption of indigenous agricultural knowledge — Bhirkot, Syangja (2021)](https://doi.org/10.1080/23311932.2021.1914384)
+- [Traditional plant-based pest and disease management — Pokhara-32, Kaski (2023)](https://doi.org/10.3126/hebids.V9i1.59586)
+- [Traditional crop diversity and farmer seed conservation — Kailash Sacred Landscape (2017)](https://www.nepjol.info/index.php/AEJ/article/view/19886/16374)
+- [Traditional crop seed systems (2020)](https://giwmscdnone.gov.np/media/app/public/75/posts/1685027773_12.pdf)
 
-| Measurement | Unit |
+These sources contribute to the agricultural knowledge component. They are not treated as direct crop-yield datasets, and documented practices retain their geographical and research context.
+
+## Technology
+
+| Area | Technology |
 |---|---|
-| Soil moisture | % |
-| Soil temperature | °C |
-| Soil pH | pH scale |
+| Backend | Python, FastAPI |
+| Frontend | Web application |
+| Climate data | NASA POWER, Open-Meteo |
+| Crop modelling | FAO-56 and FAO-33 methodologies |
+| Sensor nodes | ESP-based devices |
+| Central hub | Arduino UNO Q |
+| Hardware control | STM32U585 |
+| Edge computing | Qualcomm QRB2210, Debian Linux |
+| Knowledge system | Research-backed searchable knowledge library |
+| Local AI | Fine-tuned agricultural model (planned) |
 
-The backend records observations with timestamps and identifies whether the source is manual or device-based.
+## Run Locally
 
-The repository also contains Arduino firmware under `device/sketch/`.
+**Requirements:** Python 3.10+ and Node.js with npm.
 
-This allows the project to extend beyond remote climate data by incorporating measurements taken closer to the actual field.
-
-**Sensor integration requires compatible hardware and a working data connection.** A displayed demonstration value should not be interpreted as a real sensor measurement.
-
----
-
-## 9. Installation and Local Setup
-
-### Requirements
-
-- Python 3.10 or newer.
-- Git.
-- Internet connection for external climate data.
-
-### Clone the repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/lineo01/Arckrishitech.git
-cd Arckrishitech
+git clone https://github.com/lineo01/Arkrishitech.git
+cd Arkrishitech
 ```
 
-### Create a virtual environment
-
-**Windows**
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-**Linux / macOS**
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### Install dependencies
+Start the backend:
 
 ```bash
 pip install -r requirements.txt
-```
-
-### Start the backend
-
-```bash
 uvicorn backend.app.main:app --reload
 ```
 
-Open the application backend at:
-
-`http://127.0.0.1:8000`
-
-Interactive API documentation:
-
-`http://127.0.0.1:8000/docs`
-
-### Run tests
+Start the frontend:
 
 ```bash
-KS_OFFLINE=1 pytest -q backend/tests
+cd frontend
+npm install
+npm run dev
 ```
 
-On Windows PowerShell:
+For deployment details, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
-```powershell
-$env:KS_OFFLINE="1"
-pytest -q backend/tests
-```
+## Project Status
 
-Offline mode is intended for testing and may use synthetic weather data. Such data must not be treated as actual climate observations.
+Arkrishitech is under active development.
 
----
+The web application, backend foundation, climate-data integration, initial crop simulation engine, and searchable agricultural knowledge library form the current software foundation.
 
-## 10. Limitations and Future Development
+The distributed ESP sensor network, complete Arduino UNO Q integration, and fine-tuned local Indigenous Knowledge AI are part of the intended final system and require further implementation and testing.
 
-Arkrishitech is an evolving decision-support project. Its recommendations should be interpreted alongside local agricultural expertise.
+## Project Vision
 
-Current limitations include:
+The long-term goal is to connect scientific agricultural modelling, Nepal's indigenous farming knowledge, and real-time field information in one practical system.
 
-- Crop parameters and sowing windows require more Nepal-specific validation.
-- Historical gridded climate data may differ from actual field-level weather.
-- Yield estimates are modelled outcomes, not measured harvest records.
-- Market-price coverage is limited, and some crop prices remain assumptions.
-- The local research library currently covers selected studies and locations.
-- Reliable long-term sensor and field storage requires persistent production infrastructure.
-
-### Planned improvements
-
-- Validate crop parameters using Nepal-specific field trials and NARC research.
-- Expand crop coverage and regional suitability data.
-- Integrate more physical field sensors.
-- Expand the local agricultural knowledge library.
-- Improve market-price coverage.
-- Validate estimated yields against real farm records.
-- Add persistent cloud database storage.
-- Introduce Nepali and regional-language support.
-
----
-
-## 11. Screenshots
-
-Add real application screenshots to `docs/images/` and use the following filenames.
-
-| Screen | Image |
-|---|---|
-| Main dashboard | `dashboard.png` |
-| Field mapping | `field-mapping.png` |
-| Crop recommendations | `crop-recommendations.png` |
-| Crop calendar | `crop-calendar.png` |
-| Compare and simulate | `what-if-simulation.png` |
-| Sensors | `sensors.png` |
-| Research assistant | `research-assistant.png` |
-
-Example:
-
-```markdown
-![Arkrishitech Dashboard](docs/images/dashboard.png)
-```
-
-These screenshots should show the actual deployed application, rather than generic interface illustrations.
-
----
-
-## 12. Contributing
-
-Contributions from developers, agricultural researchers, students, and farming communities are welcome.
-
-To contribute:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make your changes.
-4. Test the implementation.
-5. Submit a pull request describing your contribution.
-
-Agricultural research contributions should include the original source, geographical scope, crop or practice, and relevant limitations.
-
-Traditional knowledge should be documented with appropriate attribution and community consent.
-
----
-
-## 13. Acknowledgements
-
-Arkrishitech builds on the work of:
-
-- NASA POWER — Historical meteorological data.
-- Open-Meteo — Weather forecast data.
-- Food and Agriculture Organization (FAO) — Agricultural and irrigation methodologies.
-- Nepal-focused agricultural researchers and farming communities.
-- Kalimati wholesale market information providers.
+**Arkrishitech — Bringing field intelligence and indigenous knowledge together for climate-aware agriculture in Nepal.**
 
 ---
 
 <p align="center">
-  <strong>Arkrishitech</strong><br>
-  Climate-aware decisions. Research-informed farming. Built for Nepal.
-</p>
-
-<p align="center">
-  <a href="https://arckrishitech.vercel.app/">Explore Arkrishitech</a> ·
-  <a href="https://github.com/lineo01/Arckrishitech">View the Source Code</a>
+  <a href="https://arckrishitech.vercel.app/"><strong>Visit Arkrishitech</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/lineo01/Arkrishitech"><strong>GitHub Repository</strong></a>
 </p>
